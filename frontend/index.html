@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Unit Converter</h1>
+
+    <section>
+      <h2>Unit Converter</h2>
+
+      <input type="number" id="value" placeholder="Enter value" />
+
+      <select id="conversion">
+        <option value="">Select Conversion</option>
+        <option value="cm-to-m">Centimeters (cm) to Meters (m)</option>
+        <option value="km-to-m">Kilometers (km) to Meters (m)</option>
+        <option value="kg-to-g">Kilograms (kg) to Grams (g)</option>
+      </select>
+
+      <button onclick="convert()">Convert</button>
+
+      <p id="result"></p>
+    </section>
+
+    <!-- Student Information -->
+    <section>
+      <h2>Student Information</h2>
+
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+
+        <input type="text" id="matric" placeholder="Matric Number" required />
+
+        <input type="text" id="department" placeholder="Department" required />
+
+        <input type="number" id="level" placeholder="Level" required />
+
+        <input type="email" id="email" placeholder="Email Address" required />
+
+        <button type="submit">Submit Student Information</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
